@@ -1,0 +1,23 @@
+{
+  "liveServer.settings.port": 5502,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#45c9f1",
+    "activityBar.background": "#45c9f1",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#ed12ba",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#15202b99",
+    "sash.hoverBorder": "#45c9f1",
+    "statusBar.background": "#16bbed",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#0f98c1",
+    "statusBarItem.remoteBackground": "#16bbed",
+    "statusBarItem.remoteForeground": "#15202b",
+    "titleBar.activeBackground": "#16bbed",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#16bbed99",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
+  "peacock.color": "#16bbed"
+}

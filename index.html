@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title mdi mdi-ice-cream>Icy Cream</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header class="container-fluid">
+    <section class="row">
+      <div class="col-12">
+        <h1 class="p-1 mdi mdi-ice-cream">Icy Cream</h1>
+      </div>
+    </section>
+
+
+
+  </header>
+
+  <main class="container-fluid">
+    <section class="row">
+      <div class="col-md-3 col-12 m-3">
+        <h2 class="text-center">Cart</h2>
+        <div class="menu-border checkout p-2">
+          <div id="cart"></div>
+          <p class="text-end p-1">Total: $<span id="total">0</span></p>
+
+        </div>
+        <div class="text-end py-2">
+          <button onclick="checkout()" class="btn btn-primary">BUY</button>
+        </div>
+      </div>
+      <div class="col-md-8 col-12 text-center">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center">Menu</h2>
+          </div>
+          <div class="menu-border menu row p-3">
+            <div class="col-md-4">
+              <div>
+                <h6>Ice Cream</h6>
+                <img onclick="addIcyCreamToCart(`Cookie Dough`)"
+                  src="https://st2.depositphotos.com/1156423/8203/i/450/depositphotos_82037630-stock-photo-ice-cream-scoop.jpg"
+                  alt="man holding sandwich" class="img-fluid menu-item vh-40">
+                <div class="d-flex justify-content-between">
+                  <p>Cookie Dough</p>
+                  <p>$10</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div>
+                <img onclick="addIcyCreamToCart(`Vanilla`)"
+                  src="https://st4.depositphotos.com/1364311/25190/i/450/depositphotos_251907910-stock-photo-ice-cream-ball.jpg"
+                  alt="man holding panini" class="img-fluid menu-item vh-40">
+                <div class="d-flex justify-content-between">
+                  <p>Vanilla</p>
+                  <p>$10</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div>
+                <img onclick="addIcyCreamToCart(`Strawberry`)"
+                  src="https://st.depositphotos.com/1364311/2900/i/450/depositphotos_29001519-stock-photo-ice-cream.jpg"
+                  alt="man holding panini" class="img-fluid menu-item vh-40">
+                <div class="d-flex justify-content-between">
+                  <p class="">Strawberry</p>
+                  <p>$10</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <h6>Vessel</h6>
+                <img onclick="addIcyCreamToCart('Waffle Cone')"
+                  src="https://m.media-amazon.com/images/I/71VNjBMakfL._SL1500_.jpg" alt="Waffle Cone"
+                  class="img-fluid menu-item">
+                <div class="d-flex justify-content-between">
+                  <p>Waffle Cone <i class=""></i></p>
+                  <p>$5</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <img onclick="addIcyCreamToCart('Waffle Bowl')" src="http://images.wbmason.com/350/L_JOY66050.jpg"
+                  alt="Waffle Bowl" class="img-fluid menu-item">
+                <div class="d-flex justify-content-between">
+                  <p>Waffle Bowl <i class=""></i></p>
+                  <p>$5</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <div class="col-md-12">
+                  <h6>Toppings</h6>
+                </div>
+                <img onclick="addIcyCreamToCart('Sprinkles')"
+                  src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Sprinkles2.jpg" alt="Sprinkles"
+                  class="img-fluid menu-item">
+                <div class="d-flex justify-content-between">
+                  <p>Sprinkles <i class=""></i></p>
+                  <p>$5</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <img onclick="addIcyCreamToCart('Chocolate')"
+                  src="https://www.eatthis.com/wp-content/uploads/sites/4/2020/05/chocolate-chips.jpg?quality=82&strip=1&resize=640%2C360"
+                  alt="Chocolate Chips" class="img-fluid menu-item">
+                <div class="d-flex justify-content-between">
+                  <p>Chocolate Chips <i class=""></i></p>
+                  <p>$5</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+    </script>
+  <script src="app.js"></script>
+</body>
+
+</html>

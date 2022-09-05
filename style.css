@@ -1,0 +1,34 @@
+header {
+  background-color: #16bbed;
+}
+
+body {
+  background-color: #3E3E3E;
+  color: white;
+}
+
+.menu-border {
+  border: solid 3px white;
+
+}
+
+.menu {
+  min-height: 100vh;
+}
+
+.menu-item {
+  border: solid 3px white;
+
+  box-shadow: 2px 2px 0 2px #16bbed;
+
+
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+  cursor: unset;
+}
+
+.checkout {
+  height: 50vh;
+}
